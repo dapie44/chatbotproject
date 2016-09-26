@@ -1,7 +1,8 @@
 var questions = {
-  "hello" : "howdy",
-  "how old are you?" : "I used to be 17",
-  "what is  your name?" : "I am Harambe"
+  "Hello" : "howdy",
+  "How old are you?" : "I used to be 17",
+  "What is  your name?" : "I am Harambe",
+  "What time is it?" : "Time is meaningless in this nightmare that we call life, I didn't relize that until it was too late."
 }
 function Speak(){
  var ChatInput = $("#input").val();
