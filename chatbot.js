@@ -1,16 +1,13 @@
-var questions = {
-  "Hello" : "howdy",
-  "How old are you?" : "I used to be 17",
-  "What is  your name?" : "I am Harambe",
-  "What time is it?" : "Time is meaningless in this nightmare that we call life, I didn't relize that until it was too late."
-}
+
 function Speak(){
- var ChatInput = $("#input").val();
- var converting;
- var storage = "";
- converting = ChatInput.split('');
-for( i =0; i < converting.length; i++){
-   storage += letterConversion[converting[i]];
+ var chatInput = document.getElementById("chatInput").value;
+ var sayResponse = questions[chatInput]
+
+document.getElementById("chat-area").innerHTML += chatInput + ": "+ sayResponse + " ";
  }
- console.log( storage );
- ChatInput = storage;
+ var questions = {
+   "Hello" : "howdy",
+   "How old are you?" : "I don't have an age",
+   "What is  your name?" : "I am Steve",
+   "What time is it?" : "Why should I tell you"
+ }
